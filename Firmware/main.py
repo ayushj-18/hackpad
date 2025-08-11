@@ -27,17 +27,6 @@ keyboard.keymap = [
     ]
 ]
 
-rgb = RGB(
-    pixel_pin=board.D9,          
-    num_pixels=10,               
-    hue_default=0,               
-    sat_default=100,
-    val_default=100,
-    val_limit=255,
-    animation_mode=2            
-)
-keyboard.modules.append(rgb)
-
 encoder = EncoderHandler()
 keyboard.modules.append(encoder)
 
